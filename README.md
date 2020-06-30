@@ -1,68 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of Contents
 
-## Available Scripts
+- [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [About](#about)
+  - [Technical Notes](#technical-notes)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+  - [Licence](#licence)
+  - [Contact](#contact)
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+[dashbo.red](https://www.dashbo.red) is a cloud-enabled, mobile-friendly, SaaS application built using React and NodeJS.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Hi, my name is James, and I'm the sole founder (and developer) of dashbored. You might be asking yourself, what is dashbored? Well, the underlying premise is to create an online platform which can be used by student societies at higher education institutions (Universities in Europe and Colleges in America) to streamline their operating processes. Having been part of the management of a student society whilst at University, I quickly realised that to effectively manage a society a whole plethora of digital platforms, services, and software were needed. Therefore, to help future societies I decided to give making my own solution a shot.
 
-### `npm test`
+## Technical Notes
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As stated in the [Introduction](#introduction) dashbored is built using React and NodeJS. However, the dashbored architecture is much more elaborate and sophisticated than just that.
 
-### `npm run build`
+### Frontend
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+On the frontend dashbored uses Node to run create-react-app with some additional middleware dependencies such as axios for API requests, and react-router to sync the URL bar with the page content. In terms of design, dashbored uses third party dependencies such as Animate.css, Bootstrap, FontAwesome, as well as some custom stylesheets.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The backend of dashbo.red is hosted on AWS and uses a variety of services to achieve different functions. The architecture design is to use a serverless framework to avoid the cost of provisioning servers. If you're interested in the architecture design then check out the ['dashbored architecture'](./dashbored-architecture.jpg).
 
-### `npm run eject`
+## Licence
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+dashbored uses the MIT licence.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+To contact me please email [james@dashbo.red](mailto:james@dashbo.red)
