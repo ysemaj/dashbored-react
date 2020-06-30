@@ -1,0 +1,22 @@
+{
+  "name": "dashbored-react",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server-dev": "cd server && npm run dev",
+    "frontend-dev": "cd frontend && npm run dev",
+    "server-prod": "cd frontend && npm run prod",
+    "frontend-prod": "cd frontend && npm run prod",
+    "dev": "concurrently -p \"[{name}]\" -n \"SERVER,REACT\" -c \"bgGreen.bold,bgBlue.bold\" \"npm run server-dev\" \"npm run frontend-dev\"",
+    "prod": "concurrently -p \"[{name}]\" -n \"SERVER,REACT\" -c \"bgGreen.bold,bgBlue.bold\" \"npm run server-prod\" \"npm run frontend-prod\""
+  },
+  "author": "James Watson",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0"
+  }
+}

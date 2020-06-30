@@ -1,0 +1,83 @@
+[
+  {
+    "heading": "About",
+    "column": 1,
+    "rows": 4,
+    "items": [
+      {
+        "id": 1,
+        "text": "Contact",
+        "uri": "/contact"
+      },
+      {
+        "id": 2,
+        "text": "Customers",
+        "uri": "/customers"
+      },
+      {
+        "id": 3,
+        "text": "FAQs",
+        "uri": "/faqs"
+      },
+      {
+        "id": 4,
+        "text": "Pricing",
+        "uri": "/pricing"
+      }
+    ]
+  },
+  {
+    "heading": "Website",
+    "column": 2,
+    "rows": 4,
+    "items": [
+      {
+        "id": 5,
+        "text": "Investors",
+        "uri": "/investors"
+      },
+      {
+        "id": 6,
+        "text": "Open-Source Libraries",
+        "uri": "/libraries"
+      },
+      {
+        "id": 7,
+        "text": "Security",
+        "uri": "/security"
+      },
+      {
+        "id": 8,
+        "text": "Sitemap",
+        "uri": "/sitemap"
+      }
+    ]
+  },
+  {
+    "heading": "Legal",
+    "column": 3,
+    "rows": 4,
+    "items": [
+      {
+        "id": 9,
+        "text": "Cookies",
+        "uri": "/legal/cookies"
+      },
+      {
+        "id": 10,
+        "text": "Privacy Policy",
+        "uri": "/legal/privacy"
+      },
+      {
+        "id": 11,
+        "text": "Terms & Conditions",
+        "uri": "/legal/terms"
+      },
+      {
+        "id": 12,
+        "text": "User Agreement",
+        "uri": "/legal/user-agreement"
+      }
+    ]
+  }
+]
