@@ -4,7 +4,7 @@ import { Provider, connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 
-import Header from './components/Header';
+import Navbar from './components/navigation/Navbar';
 import Footer from './components/footer/Footer';
 import CookieNotification from './components/CookieNotification';
 
@@ -16,7 +16,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Header />
+        <Navbar />
         <main className="mt-2 container">
           <Switch>
             <Route path="/" exact component={Splash} />

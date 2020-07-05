@@ -1,20 +1,30 @@
 import React from 'react';
-import { Route, Link, BrowserRouter as Router, Switch, withRouter } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
-class Header extends React.Component {
+function HomeButton() {
+  const history = useHistory();
+  function handleClick() {
+    history.push('/');
+  }
+  return (
+    <Link className="navbar-brand col-sm-3 col-md-2 mr-0" onClick={handleClick}>
+      <img
+        className="logo-img"
+        src={require('../../resources/img/logo.png')}
+        id="logo-img"
+        alt="dashbored logo"
+      />
+    </Link>
+  );
+}
+
+class Navbar extends React.Component {
   render() {
     return (
       <section id="nav">
         <nav id="navbar" className="navbar fixed-top flex-md-nowrap bg-light border-bottom shadow">
           <div className="col logo">
-            <Link className="navbar-brand col-sm-3 col-md-2 mr-0" to="/">
-              <img
-                className="logo-img"
-                src={require('../resources/img/logo.png')}
-                id="logo-img"
-                alt="dashbored logo"
-              />
-            </Link>
+            <HomeButton />
           </div>
           <ul className="navigation pl-5 my-auto" id="navigation-bar">
             <li>
@@ -136,4 +146,4 @@ class Header extends React.Component {
   }
 }
 
-export default Header;
+export default Navbar;
