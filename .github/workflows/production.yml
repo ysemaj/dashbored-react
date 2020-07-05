@@ -1,4 +1,4 @@
-name: Node.js CI/CD Workflow
+name: Production Workflow (Build create-react-app and sync to S3)
 
 on:
   push:
