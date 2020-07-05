@@ -9,7 +9,6 @@ class Head extends React.Component {
           <meta charset="utf-8" />
           <link rel="icon" href="../src/resources/img/favicon.ico" />
           <link rel="apple-touch-icon" href="../src/resources/img/logo.png" />
-          <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
           <link rel="canonical" href="http://dashbo.red/" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="theme-color" content="#000000" />

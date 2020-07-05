@@ -12,10 +12,10 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 library.add(fab, faEnvelope);
 
 ReactDOM.render(
-  <>
+  <div id="app">
     <Head />
     <App />
-  </>,
+  </div>,
   document.getElementById('root')
 );
 
