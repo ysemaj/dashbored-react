@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Head from './utils/Head';
 import * as serviceWorker from './serviceWorker';
 
 import './resources/css/styles.css';
@@ -10,6 +11,12 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 library.add(fab, faEnvelope);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <>
+    <Head />
+    <App />
+  </>,
+  document.getElementById('root')
+);
 
 serviceWorker.unregister();

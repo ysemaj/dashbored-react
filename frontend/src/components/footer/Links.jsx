@@ -10,22 +10,6 @@ class Links extends React.Component {
     };
   }
 
-  // componentDidMount() {
-  //   const myHeaders = new Headers({
-  //     'Content-Type': 'application/json',
-  //     Accept: 'application/json',
-  //   });
-  //   const url = 'http://localhost:9000/data';
-  //   return fetch(url, {
-  //     headers: myHeaders,
-  //   })
-  //     .then((response) => response.json())
-  //     .then((response) => {
-  //       this.setState({ data: response });
-  //     })
-  //     .catch((error) => console.log(error));
-  // }
-
   componentDidMount() {
     const URL = 'http://localhost:9000/data';
     axios({
