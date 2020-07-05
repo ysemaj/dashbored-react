@@ -6,8 +6,8 @@
   "scripts": {
     "server-dev": "cd server && npm run dev",
     "frontend-dev": "cd frontend && npm run dev",
-    "server-prod": "cd frontend && npm run prod",
-    "frontend-prod": "cd frontend && npm run prod",
+    "server-prod": "cd server && npm run build",
+    "frontend-prod": "cd frontend && npm run build",
     "dev": "concurrently -p \"[{name}]\" -n \"SERVER,REACT\" -c \"bgGreen.bold,bgBlue.bold\" \"npm run server-dev\" \"npm run frontend-dev\"",
     "prod": "concurrently -p \"[{name}]\" -n \"SERVER,REACT\" -c \"bgGreen.bold,bgBlue.bold\" \"npm run server-prod\" \"npm run frontend-prod\""
   },

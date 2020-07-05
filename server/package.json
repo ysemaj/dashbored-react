@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "prod": "node server.js",
+    "build": "node server.js",
     "eslint": "./node_modules/.bin/eslint"
   },
   "author": "James Watson",
