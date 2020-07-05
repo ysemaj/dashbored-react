@@ -6,32 +6,29 @@ import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router
 
 import Header from './components/Header';
 import Footer from './components/footer/Footer';
-import CookieBar from './components/CookieBar';
+import CookieNotification from './components/CookieNotification';
 
 import Splash from './routes/Splash';
 import Contact from './routes/Contact';
 import Error from './routes/Error';
 
-import './resources/css/styles.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-library.add(fab, faEnvelope);
-
-const App = () => (
-  <>
-    <Header />
-    <main className="mt-2 container">
-      <Switch>
-        <Route exact path="/" component={Splash} />
-        <Route path="/contact" component={Contact} />
-        <Route component={Error} />
-      </Switch>
-    </main>
-    <Footer />
-    <CookieBar />
-  </>
-);
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Header />
+        <main className="mt-2 container">
+          <Switch>
+            <Route path="/" exact component={Splash} />
+            <Route path="/contact" exact component={Contact} />
+            <Route component={Error} />
+          </Switch>
+        </main>
+        <Footer />
+        <CookieNotification />
+      </Router>
+    );
+  }
+}
 
 export default App;

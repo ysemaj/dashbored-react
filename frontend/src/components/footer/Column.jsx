@@ -27,7 +27,7 @@ class Column extends React.Component {
 
   render() {
     return (
-      <Router>
+      <>
         {this.state.data.map((data) => {
           return (
             <div className="col-6 col-md" key={data.column}>
@@ -46,7 +46,7 @@ class Column extends React.Component {
             </div>
           );
         })}
-      </Router>
+      </>
     );
   }
 }

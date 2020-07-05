@@ -1,6 +1,6 @@
 import React from 'react';
 
-class CookieBar extends React.Component {
+class CookieNotification extends React.Component {
   render() {
     return (
       <div className="animate__animated animate__fadeInUp w-100" id="cookie-wrapper">
@@ -18,4 +18,4 @@ class CookieBar extends React.Component {
   }
 }
 
-export default CookieBar;
+export default CookieNotification;

@@ -1,15 +1,15 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-
+import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-render(
-  <Router>
-    <App />
-  </Router>,
-  document.body
-);
+import './resources/css/styles.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+library.add(fab, faEnvelope);
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 serviceWorker.unregister();
