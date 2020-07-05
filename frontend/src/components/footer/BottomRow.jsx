@@ -1,7 +1,7 @@
 import React from 'react';
-import AppFooterColumn from './AppFooterColumn';
+import Column from './Column';
 
-class AppFooterBottomRow extends React.Component {
+class BottomRow extends React.Component {
   showCurrentYear() {
     return new Date().getFullYear();
   }
@@ -23,11 +23,11 @@ class AppFooterBottomRow extends React.Component {
               Built with &#10084; in Shrewsbury, United Kingdom
             </small>
           </div>
-          <AppFooterColumn />
+          <Column />
         </div>
       </section>
     );
   }
 }
 
-export default AppFooterBottomRow;
+export default BottomRow;

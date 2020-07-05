@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
 
-class AppFooterColumn extends React.Component {
+class Column extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -51,4 +51,4 @@ class AppFooterColumn extends React.Component {
   }
 }
 
-export default AppFooterColumn;
+export default Column;

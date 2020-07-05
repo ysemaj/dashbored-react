@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-class AppFooterTopRow extends React.Component {
+class TopRow extends React.Component {
   render() {
     return (
       <section className="container pt-4 mb-md-5 pt-md-5">
@@ -40,4 +40,4 @@ class AppFooterTopRow extends React.Component {
   }
 }
 
-export default AppFooterTopRow;
+export default TopRow;

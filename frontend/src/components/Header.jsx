@@ -1,7 +1,7 @@
 import React from 'react';
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, Link, BrowserRouter as Router, Switch, withRouter } from 'react-router-dom';
 
-class AppHeader extends React.Component {
+class Header extends React.Component {
   render() {
     return (
       <Router>
@@ -141,4 +141,4 @@ class AppHeader extends React.Component {
   }
 }
 
-export default AppHeader;
+export default withRouter(Header);
