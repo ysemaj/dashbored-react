@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link, BrowserRouter as Router } from 'react-router-dom';
+import axios from 'axios';
 
-class Column extends React.Component {
+class Links extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -9,18 +10,32 @@ class Column extends React.Component {
     };
   }
 
+  // componentDidMount() {
+  //   const myHeaders = new Headers({
+  //     'Content-Type': 'application/json',
+  //     Accept: 'application/json',
+  //   });
+  //   const url = 'http://localhost:9000/data';
+  //   return fetch(url, {
+  //     headers: myHeaders,
+  //   })
+  //     .then((response) => response.json())
+  //     .then((response) => {
+  //       this.setState({ data: response });
+  //     })
+  //     .catch((error) => console.log(error));
+  // }
+
   componentDidMount() {
-    const myHeaders = new Headers({
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-    });
-    const url = 'http://localhost:9000/data';
-    return fetch(url, {
-      headers: myHeaders,
+    const URL = 'http://localhost:9000/data';
+    axios({
+      method: 'GET',
+      url: URL,
+      responseType: 'json',
     })
-      .then((response) => response.json())
       .then((response) => {
-        this.setState({ data: response });
+        console.log(response);
+        this.setState({ data: response.data });
       })
       .catch((error) => console.log(error));
   }
@@ -51,4 +66,4 @@ class Column extends React.Component {
   }
 }
 
-export default Column;
+export default Links;

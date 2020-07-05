@@ -1,5 +1,5 @@
 import React from 'react';
-import Column from './Column';
+import Links from './Links';
 
 class BottomRow extends React.Component {
   showCurrentYear() {
@@ -23,7 +23,7 @@ class BottomRow extends React.Component {
               Built with &#10084; in Shrewsbury, United Kingdom
             </small>
           </div>
-          <Column />
+          <Links />
         </div>
       </section>
     );
