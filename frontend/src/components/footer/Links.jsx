@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 class Links extends React.Component {

@@ -1,8 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Provider, connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
-import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Navbar from './components/navigation/Navbar';
 import Footer from './components/footer/Footer';
