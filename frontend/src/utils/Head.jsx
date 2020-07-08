@@ -19,6 +19,10 @@ class Head extends React.Component {
           <title>Dashbored</title>
 
           <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+          />
+          <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"
           />
