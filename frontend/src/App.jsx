@@ -14,11 +14,13 @@ class App extends React.Component {
     return (
       <Router>
         <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/contact" exact component={Contact} />
-          <Route component={Error} />
-        </Switch>
+        <>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/contact" exact component={Contact} />
+            <Route component={Error} />
+          </Switch>
+        </>
         <Footer />
         <CookieNotification />
       </Router>

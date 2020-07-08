@@ -1,11 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 export class Landing extends React.Component {
   render() {
     return (
       <>
-        <img className="logo-particles mx-auto" src="images/logo-particles.png" />
+        <img
+          className="logo-particles mx-auto"
+          src={require('../../resources/img/logo-particles.png')}
+          alt="logo particles"
+        />
         <section className="home-splash container">
           <div className="jumbotron text-center mb-0 transparent">
             <h1
@@ -22,7 +25,8 @@ export class Landing extends React.Component {
             <div className="animate__animated animate__zoomIn animate__delay-1s" id="screenshot">
               <img
                 className="rounded img-fluid mx-auto shadow-lg"
-                src="images/dashbored-screenshot.jpg"
+                src={require('../../resources/img/dashbored-screenshot.jpg')}
+                alt="dashbored screenshot"
               />
             </div>
           </div>
@@ -281,12 +285,6 @@ export class About extends React.Component {
               </p>
             </div>
           </div>
-          <div className="text-center">
-            <a className="btn btn-marketing btn-danger rounded-pill lift lift-sm" href="/customers">
-              Learn More
-            </a>
-          </div>{' '}
-          -->
         </div>
       </section>
     );
@@ -302,7 +300,7 @@ export class Partners extends React.Component {
             <h2 className="h3">Partner Organisations</h2>
             <p>
               We work with a variety of partner organisations to provide our customers with the best
-              service possible{' '}
+              service possible
             </p>
             <br />
             <div className="pt-2">
@@ -378,11 +376,31 @@ export class Customers extends React.Component {
           </div>
           <div className="container pb-5" id="societies">
             <div className="row justify-content-center overlay">
-              <img className="home-splash-clients" src="images/users/aberlawsoc-grey.png" />
-              <img className="home-splash-clients" src="images/users/aberuni-grey.png" />
-              <img className="home-splash-clients" src="images/users/abercompsoc-grey.png" />
-              <img className="home-splash-clients" src="images/users/abercrimsoc-grey.png" />
-              <img className="home-splash-clients" src="images/users/abersu-grey.png" />
+              <img
+                className="home-splash-clients"
+                src={require('../../resources/img/users/aberlawsoc-grey.png')}
+                alt="Aberystwyth Law Society"
+              />
+              <img
+                className="home-splash-clients"
+                src={require('../../resources/img/users/aberuni-grey.png')}
+                alt=""
+              />
+              <img
+                className="home-splash-clients"
+                src={require('../../resources/img/users/abercompsoc-grey.png')}
+                alt=""
+              />
+              <img
+                className="home-splash-clients"
+                src={require('../../resources/img/users/abercrimsoc-grey.png')}
+                alt=""
+              />
+              <img
+                className="home-splash-clients"
+                src={require('../../resources/img/users/abersu-grey.png')}
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -414,7 +432,7 @@ export class Newsletter extends React.Component {
             </button>
           </form>
           <label className="text-sm">
-            View our privacy policy{' '}
+            View our privacy policy
             <a className="text-sm" href="legal/privacy">
               here.
             </a>
@@ -439,14 +457,3 @@ export class Spacer extends React.Component {
     return <div className="space-100"></div>;
   }
 }
-
-// module.exports = {
-//   Landing,
-//   Features,
-//   About,
-//   Partners,
-//   Team,
-//   Customers,
-//   Newsletter,
-//   Spacer,
-// };

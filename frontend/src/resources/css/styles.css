@@ -558,6 +558,7 @@ body.modal-open[style] {
 
 .jumbotron {
   text-align: left;
+  background-color: #ffffff00 !important;
 }
 
 .logo-particles {

@@ -9,8 +9,11 @@ class Home extends React.Component {
         <Splash.Landing />
         <Splash.Features />
         <Splash.About />
+        <Splash.Spacer />
         <Splash.Partners />
+        <Splash.Spacer />
         <Splash.Team />
+        <Splash.Spacer />
         <Splash.Customers />
         <Splash.Newsletter />
       </main>
