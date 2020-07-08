@@ -5,7 +5,7 @@ import Navbar from './components/navigation/Navbar';
 import Footer from './components/footer/Footer';
 import CookieNotification from './components/CookieNotification';
 
-import Splash from './routes/Splash';
+import Home from './routes/Home';
 import Contact from './routes/Contact';
 import Error from './routes/Error';
 
@@ -14,13 +14,11 @@ class App extends React.Component {
     return (
       <Router>
         <Navbar />
-        <main className="mt-2 container">
-          <Switch>
-            <Route path="/" exact component={Splash} />
-            <Route path="/contact" exact component={Contact} />
-            <Route component={Error} />
-          </Switch>
-        </main>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" exact component={Contact} />
+          <Route component={Error} />
+        </Switch>
         <Footer />
         <CookieNotification />
       </Router>
